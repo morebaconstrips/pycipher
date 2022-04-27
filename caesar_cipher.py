@@ -13,7 +13,7 @@ def caesar(string, rotations, back):
 			decrypted += alphabet[(alphabet.index(string[i].lower()) - rotations) % 26]
 		else:
 			decrypted += alphabet[(alphabet.index(string[i].lower()) + rotations) % 26]
-	print(f'Result: {decrypted}')
+	print(f'{string} ---> {decrypted}')
 
 def print_usage():
     print('Usage: python3 caesar_cipher.py [message] [rotations] [back=False]')
